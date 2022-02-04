@@ -12,6 +12,11 @@
 		0EC438F827ABABD80098D053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC438F727ABABD80098D053 /* ViewController.swift */; };
 		0EC438FD27ABABE50098D053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EC438FC27ABABE50098D053 /* Assets.xcassets */; };
 		0EC4390027ABABE50098D053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC438FE27ABABE50098D053 /* LaunchScreen.storyboard */; };
+		0EC4393027AC893C0098D053 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4392F27AC893C0098D053 /* UIViewExtension.swift */; };
+		0EC4393527ACA87C0098D053 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4393427ACA87C0098D053 /* Tweet.swift */; };
+		0EC4393827ACAA4E0098D053 /* TwitterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4393727ACAA4E0098D053 /* TwitterData.swift */; };
+		0EC4393B27ACAAEE0098D053 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4393A27ACAAEE0098D053 /* Meta.swift */; };
+		0EC4393E27ACAB920098D053 /* PublicMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4393D27ACAB920098D053 /* PublicMetrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		0EC438FC27ABABE50098D053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EC438FF27ABABE50098D053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EC4390127ABABE50098D053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EC4392F27AC893C0098D053 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		0EC4393427ACA87C0098D053 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		0EC4393727ACAA4E0098D053 /* TwitterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterData.swift; sourceTree = "<group>"; };
+		0EC4393A27ACAAEE0098D053 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		0EC4393D27ACAB920098D053 /* PublicMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMetrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 		0EC438F227ABABD80098D053 /* TwitTrend */ = {
 			isa = PBXGroup;
 			children = (
+				0EC4393327ACA86B0098D053 /* Models */,
+				0EC4392E27AC89170098D053 /* Extensions */,
 				0EC438F327ABABD80098D053 /* AppDelegate.swift */,
 				0EC438F527ABABD80098D053 /* SceneDelegate.swift */,
 				0EC438F727ABABD80098D053 /* ViewController.swift */,
@@ -62,6 +74,25 @@
 				0EC4390127ABABE50098D053 /* Info.plist */,
 			);
 			path = TwitTrend;
+			sourceTree = "<group>";
+		};
+		0EC4392E27AC89170098D053 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0EC4392F27AC893C0098D053 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0EC4393327ACA86B0098D053 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EC4393427ACA87C0098D053 /* Tweet.swift */,
+				0EC4393727ACAA4E0098D053 /* TwitterData.swift */,
+				0EC4393A27ACAAEE0098D053 /* Meta.swift */,
+				0EC4393D27ACAB920098D053 /* PublicMetrics.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC4393027AC893C0098D053 /* UIViewExtension.swift in Sources */,
+				0EC4393527ACA87C0098D053 /* Tweet.swift in Sources */,
 				0EC438F827ABABD80098D053 /* ViewController.swift in Sources */,
+				0EC4393827ACAA4E0098D053 /* TwitterData.swift in Sources */,
+				0EC4393E27ACAB920098D053 /* PublicMetrics.swift in Sources */,
 				0EC438F427ABABD80098D053 /* AppDelegate.swift in Sources */,
+				0EC4393B27ACAAEE0098D053 /* Meta.swift in Sources */,
 				0EC438F627ABABD80098D053 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
