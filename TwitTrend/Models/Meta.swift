@@ -10,5 +10,5 @@ import Foundation
 struct Meta: Codable {
     var newest_id: String
     var oldest_id: String
-    result_count: Int
+    var result_count: Int
 }
