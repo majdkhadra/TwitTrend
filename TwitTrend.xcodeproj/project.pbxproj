@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EC438F427ABABD80098D053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC438F327ABABD80098D053 /* AppDelegate.swift */; };
 		0EC438F627ABABD80098D053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC438F527ABABD80098D053 /* SceneDelegate.swift */; };
-		0EC438F827ABABD80098D053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC438F727ABABD80098D053 /* ViewController.swift */; };
+		0EC438F827ABABD80098D053 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC438F727ABABD80098D053 /* TrendingViewController.swift */; };
 		0EC438FD27ABABE50098D053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EC438FC27ABABE50098D053 /* Assets.xcassets */; };
 		0EC4390027ABABE50098D053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC438FE27ABABE50098D053 /* LaunchScreen.storyboard */; };
 		0EC4393027AC893C0098D053 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4392F27AC893C0098D053 /* UIViewExtension.swift */; };
@@ -19,14 +19,73 @@
 		0EC4393E27ACAB920098D053 /* PublicMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4393D27ACAB920098D053 /* PublicMetrics.swift */; };
 		0EC4394127ACE7490098D053 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4394027ACE7490098D053 /* UITextFieldExtension.swift */; };
 		0EC4394427ADDB3A0098D053 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4394327ADDB390098D053 /* TweetTableViewCell.swift */; };
-		0EC4394727AF60430098D053 /* TweetCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4394627AF60430098D053 /* TweetCellViewModel.swift */; };
+		0EC4396027AF750F0098D053 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4395227AF74AD0098D053 /* SwifteriOS.framework */; };
+		0EC4396127AF750F0098D053 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4395227AF74AD0098D053 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0EC4396627B0620B0098D053 /* Trend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4396527B0620B0098D053 /* Trend.swift */; };
+		0EC4396827B063650098D053 /* Trends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4396727B063650098D053 /* Trends.swift */; };
+		0EC4397527B090DE0098D053 /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4397427B090DD0098D053 /* TrendingTableViewCell.swift */; };
+		0EC4397727B0BC660098D053 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4397627B0BC650098D053 /* UIColorExtension.swift */; };
+		0EC4397927B0ECE20098D053 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4397827B0ECE20098D053 /* UIViewControllerExtension.swift */; };
+		0EC4397D27B1EE0E0098D053 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4397C27B1EE0E0098D053 /* TweetViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EC4395127AF74AD0098D053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		0EC4395327AF74AD0098D053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		0EC4395527AF74AD0098D053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		0EC4395727AF74AD0098D053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		0EC4395927AF74AD0098D053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0EC4396227AF750F0098D053 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0EC4396127AF750F0098D053 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0EC438F027ABABD80098D053 /* TwitTrend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitTrend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC438F327ABABD80098D053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EC438F527ABABD80098D053 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EC438F727ABABD80098D053 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0EC438F727ABABD80098D053 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		0EC438FC27ABABE50098D053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EC438FF27ABABE50098D053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EC4390127ABABE50098D053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,7 +96,13 @@
 		0EC4393D27ACAB920098D053 /* PublicMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMetrics.swift; sourceTree = "<group>"; };
 		0EC4394027ACE7490098D053 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		0EC4394327ADDB390098D053 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
-		0EC4394627AF60430098D053 /* TweetCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellViewModel.swift; sourceTree = "<group>"; };
+		0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		0EC4396527B0620B0098D053 /* Trend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trend.swift; sourceTree = "<group>"; };
+		0EC4396727B063650098D053 /* Trends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trends.swift; sourceTree = "<group>"; };
+		0EC4397427B090DD0098D053 /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
+		0EC4397627B0BC650098D053 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		0EC4397827B0ECE20098D053 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		0EC4397C27B1EE0E0098D053 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +110,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC4396027AF750F0098D053 /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E74F8A627B2E3E4007F27E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EC4394327ADDB390098D053 /* TweetTableViewCell.swift */,
+				0EC4397427B090DD0098D053 /* TrendingTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E74F8A727B2E3F7007F27E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EC438F727ABABD80098D053 /* TrendingViewController.swift */,
+				0EC4397C27B1EE0E0098D053 /* TweetViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		0EC438E727ABABD80098D053 = {
 			isa = PBXGroup;
 			children = (
+				0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */,
 				0EC438F227ABABD80098D053 /* TwitTrend */,
 				0EC438F127ABABD80098D053 /* Products */,
+				0EC4395F27AF750F0098D053 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,15 +157,14 @@
 			isa = PBXGroup;
 			children = (
 				0EC4393327ACA86B0098D053 /* Models */,
+				0E74F8A627B2E3E4007F27E5 /* Views */,
+				0E74F8A727B2E3F7007F27E5 /* ViewControllers */,
 				0EC4392E27AC89170098D053 /* Extensions */,
 				0EC438F327ABABD80098D053 /* AppDelegate.swift */,
 				0EC438F527ABABD80098D053 /* SceneDelegate.swift */,
-				0EC438F727ABABD80098D053 /* ViewController.swift */,
-				0EC438FC27ABABE50098D053 /* Assets.xcassets */,
-				0EC438FE27ABABE50098D053 /* LaunchScreen.storyboard */,
 				0EC4390127ABABE50098D053 /* Info.plist */,
-				0EC4394327ADDB390098D053 /* TweetTableViewCell.swift */,
-				0EC4394627AF60430098D053 /* TweetCellViewModel.swift */,
+				0EC438FE27ABABE50098D053 /* LaunchScreen.storyboard */,
+				0EC438FC27ABABE50098D053 /* Assets.xcassets */,
 			);
 			path = TwitTrend;
 			sourceTree = "<group>";
@@ -87,8 +172,10 @@
 		0EC4392E27AC89170098D053 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0EC4397627B0BC650098D053 /* UIColorExtension.swift */,
 				0EC4392F27AC893C0098D053 /* UIViewExtension.swift */,
 				0EC4394027ACE7490098D053 /* UITextFieldExtension.swift */,
+				0EC4397827B0ECE20098D053 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -100,8 +187,29 @@
 				0EC4393727ACAA4E0098D053 /* TwitterData.swift */,
 				0EC4393A27ACAAEE0098D053 /* Meta.swift */,
 				0EC4393D27ACAB920098D053 /* PublicMetrics.swift */,
+				0EC4396527B0620B0098D053 /* Trend.swift */,
+				0EC4396727B063650098D053 /* Trends.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0EC4394A27AF74AB0098D053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EC4395227AF74AD0098D053 /* SwifteriOS.framework */,
+				0EC4395427AF74AD0098D053 /* SwifterMac.framework */,
+				0EC4395627AF74AD0098D053 /* SwifterDemoiOS.app */,
+				0EC4395827AF74AD0098D053 /* SwifterDemoMac.app */,
+				0EC4395A27AF74AD0098D053 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EC4395F27AF750F0098D053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +222,7 @@
 				0EC438EC27ABABD80098D053 /* Sources */,
 				0EC438ED27ABABD80098D053 /* Frameworks */,
 				0EC438EE27ABABD80098D053 /* Resources */,
+				0EC4396227AF750F0098D053 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,12 +258,56 @@
 			mainGroup = 0EC438E727ABABD80098D053;
 			productRefGroup = 0EC438F127ABABD80098D053 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0EC4394A27AF74AB0098D053 /* Products */;
+					ProjectRef = 0EC4394927AF74AB0098D053 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0EC438EF27ABABD80098D053 /* TwitTrend */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0EC4395227AF74AD0098D053 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 0EC4395127AF74AD0098D053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0EC4395427AF74AD0098D053 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 0EC4395327AF74AD0098D053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0EC4395627AF74AD0098D053 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 0EC4395527AF74AD0098D053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0EC4395827AF74AD0098D053 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 0EC4395727AF74AD0098D053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0EC4395A27AF74AD0098D053 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 0EC4395927AF74AD0098D053 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0EC438EE27ABABD80098D053 /* Resources */ = {
@@ -173,17 +326,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC4396827B063650098D053 /* Trends.swift in Sources */,
 				0EC4393027AC893C0098D053 /* UIViewExtension.swift in Sources */,
 				0EC4394127ACE7490098D053 /* UITextFieldExtension.swift in Sources */,
 				0EC4393527ACA87C0098D053 /* Tweet.swift in Sources */,
-				0EC4394727AF60430098D053 /* TweetCellViewModel.swift in Sources */,
+				0EC4397727B0BC660098D053 /* UIColorExtension.swift in Sources */,
 				0EC4394427ADDB3A0098D053 /* TweetTableViewCell.swift in Sources */,
-				0EC438F827ABABD80098D053 /* ViewController.swift in Sources */,
+				0EC438F827ABABD80098D053 /* TrendingViewController.swift in Sources */,
 				0EC4393827ACAA4E0098D053 /* TwitterData.swift in Sources */,
 				0EC4393E27ACAB920098D053 /* PublicMetrics.swift in Sources */,
+				0EC4397D27B1EE0E0098D053 /* TweetViewController.swift in Sources */,
+				0EC4397527B090DE0098D053 /* TrendingTableViewCell.swift in Sources */,
 				0EC438F427ABABD80098D053 /* AppDelegate.swift in Sources */,
 				0EC4393B27ACAAEE0098D053 /* Meta.swift in Sources */,
+				0EC4397927B0ECE20098D053 /* UIViewControllerExtension.swift in Sources */,
 				0EC438F627ABABD80098D053 /* SceneDelegate.swift in Sources */,
+				0EC4396627B0620B0098D053 /* Trend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

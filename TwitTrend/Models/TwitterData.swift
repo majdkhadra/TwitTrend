@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TwitterData: Codable {
+struct Tweets: Codable {
     var data: [Tweet]
     var meta: Meta
 }

@@ -8,7 +8,6 @@
 import Foundation
 
 struct Tweet: Codable {
-    var id: String
+    var id_str: String
     var text: String
-    var public_metrics: PublicMetrics
 }
